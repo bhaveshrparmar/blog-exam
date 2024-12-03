@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Blog Section</title>
+  <style>
+    
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+
+    
+    .blog-container {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .blog-header {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .blog-header h1 {
+      font-size: 28px;
+      color: #333;
+    }
+
+    
+    .blog-posts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    
+    .blog-post {
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      width: calc(33.333% - 20px); 
+      padding: 15px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .blog-post img {
+      width: 100%;
+      height: auto;
+      border-radius: 5px;
+    }
+
+    .blog-post h3 {
+      margin-top: 15px;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .blog-post p {
+      font-size: 14px;
+      color: #555;
+      margin-top: 10px;
+    }
+
+    .read-more {
+      font-weight: bold;
+      color: #007bff;
+      text-decoration: none;
+      margin-top: 15px;
+      display: inline-block;
+    }
+
+    .read-more:hover {
+      text-decoration: underline;
+    }
+
+    
+    @media (max-width: 1024px) {
+      .blog-post {
+        width: calc(50% - 20px); 
+      }
+    }
+
+    
+    @media (max-width: 768px) {
+      .blog-post {
+        width: 100%; 
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="blog-container">
+    <header class="blog-header">
+      <h1>Latest Blog Posts</h1>
+    </header>
+
+    <div class="blog-posts">
+      <div class="blog-post">
+        <img src="html  css.jpg" alt="Blog 1">
+        <h3>How to Learn HTML & CSS</h3>
+        <p>HTML and CSS are the building blocks of web development. In this post, we will explore some basic concepts...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+
+      <div class="blog-post">
+        <img src="java.jpg" alt="Blog 2">
+        <h3>Introduction to JavaScript</h3>
+        <p>JavaScript is one of the most popular programming languages. This article covers the fundamentals...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+
+      <div class="blog-post">
+        <img src="responsive web.jpg" alt="Blog 3">
+        <h3>What is Responsive Design?</h3>
+        <p>Responsive design ensures that your website looks great on all devices. Learn more about making your site responsive...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+
+      <div class="blog-post">
+        <img src="git 3.jpg" alt="Blog 4" height="300px" width="300px">
+        <h3>Getting Started with Git</h3>
+        <p>Git is a version control system that helps developers track changes to their code. Here's how you can get started...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+
+      <div class="blog-post">
+        <img src="flexbox.jpg" alt="Blog 5">
+        <h3>Mastering Flexbox Layout</h3>
+        <p>Flexbox makes it easier to create flexible layouts. This guide will walk you through the key concepts...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+
+      <div class="blog-post">
+        <img src="grid.jpg" alt="Blog 6">
+        <h3>Getting to Know CSS Grid</h3>
+        <p>CSS Grid is a powerful layout system that allows for more complex designs. Learn how to create grid-based layouts...</p>
+        <a href="#" class="read-more">Read More</a>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
